@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tổng hợp các thẻ HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #ede7f6; margin: 0; padding: 20px; }
+    .box { max-width: 850px; margin: auto; background: #fff; padding: 25px; border-radius: 10px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #888; padding: 6px; }
+    th { background: #d1c4e9; }
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1 align="center">Tổng hợp các thẻ đã học</h1>
+    <hr>
+
+    <h2>1. Tiêu đề (h1 - h6)</h2>
+    <h1>Tiêu đề 1</h1><h2>Tiêu đề 2</h2><h3>Tiêu đề 3</h3>
+    <h4>Tiêu đề 4</h4><h5>Tiêu đề 5</h5><h6>Tiêu đề 6</h6>
+
+    <h2>2. Định dạng văn bản</h2>
+    <p>Đoạn văn có <b>chữ đậm</b>, <i>chữ nghiêng</i>, <u>gạch chân</u>, <strong>strong</strong>, <em>em</em>,
+       <small>chữ nhỏ</small>, <mark>đánh dấu</mark>, <del>gạch ngang</del>,
+       H<sub>2</sub>O và x<sup>2</sup>.</p>
+    <p>Dòng thứ nhất<br>Dòng thứ hai (dùng thẻ br)</p>
+    <pre>Văn bản
+   giữ nguyên
+      khoảng trắng (thẻ pre)</pre>
+    <blockquote>Đây là một đoạn trích dẫn (blockquote).</blockquote>
+    <p><font color="red" size="4">Chữ màu đỏ dùng thẻ font</font></p>
+
+    <h2>3. Danh sách</h2>
+    <ul><li>Danh sách không thứ tự 1</li><li>Danh sách không thứ tự 2</li></ul>
+    <ol><li>Danh sách có thứ tự 1</li><li>Danh sách có thứ tự 2</li></ol>
+    <dl><dt>HTML</dt><dd>Ngôn ngữ đánh dấu siêu văn bản</dd>
+        <dt>CSS</dt><dd>Ngôn ngữ định dạng trang web</dd></dl>
+
+    <h2>4. Liên kết và hình ảnh</h2>
+    <p><a href="https://www.w3schools.com" target="_blank">Truy cập W3Schools</a> |
+       <a href="#cuoitrang">Xuống cuối trang</a></p>
+    <img src="https://via.placeholder.com/300x120" alt="Hình minh họa" width="300">
+
+    <h2>5. Bảng</h2>
+    <table>
+      <caption>Bảng điểm</caption>
+      <thead><tr><th>STT</th><th>Môn học</th><th>Số tín chỉ</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Thiết kế Web</td><td>3</td></tr>
+        <tr><td>2</td><td>Cơ sở dữ liệu</td><td>4</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2">Tổng</td><td>7</td></tr></tfoot>
+    </table>
+
+    <h2>6. Biểu mẫu</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Đăng ký</legend>
+        <p><label for="ten">Họ tên: </label><input type="text" id="ten"></p>
+        <p><label for="mk">Mật khẩu: </label><input type="password" id="mk"></p>
+        <p>Giới tính:
+          <input type="radio" name="gt" id="nam"><label for="nam">Nam</label>
+          <input type="radio" name="gt" id="nu"><label for="nu">Nữ</label></p>
+        <p>Sở thích:
+          <input type="checkbox" id="c1"><label for="c1">Nhạc</label>
+          <input type="checkbox" id="c2"><label for="c2">Sách</label></p>
+        <p><label for="lop">Lớp: </label>
+          <select id="lop"><option>CNTT1</option><option>CNTT2</option></select></p>
+        <p><textarea rows="3" cols="40" placeholder="Ghi chú..."></textarea></p>
+        <input type="submit" value="Gửi"> <input type="reset" value="Xóa">
+      </fieldset>
+    </form>
+
+    <h2>7. Đa phương tiện và khung nhúng</h2>
+    <p><audio controls><source src="nhac.mp3" type="audio/mpeg">Trình duyệt không hỗ trợ audio.</audio></p>
+    <p><video controls width="320"><source src="video.mp4" type="video/mp4">Trình duyệt không hỗ trợ video.</video></p>
+    <iframe src="https://www.google.com/maps?q=Ho+Chi+Minh+City&output=embed" width="100%" height="250" style="border:0"></iframe>
+
+    <hr>
+    <p id="cuoitrang" align="center"><small>&copy; 2026 - Nguyễn Văn A</small></p>
+  </div>
+</body>
+</html>
